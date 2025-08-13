@@ -59,7 +59,7 @@ export const HeroSlider = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div id="home" className="relative h-screen w-full overflow-hidden">
       {/* Background Images */}
       {slides.map((slide, index) => (
         <div

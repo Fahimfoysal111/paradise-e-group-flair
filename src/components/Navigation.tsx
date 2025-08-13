@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import egroupLogo from '@/assets/egroup-logo-updated.png';
+import egroupLogo from '@/assets/egroup-logo.png';
+import paradiseLogo from '@/assets/paradise-logo.png';
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +31,18 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
+          {/* Logos */}
+          <div className="flex items-center space-x-4">
             <img 
               src={egroupLogo} 
               alt="E-Group Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-10 w-auto object-contain"
+            />
+            <div className="w-px h-8 bg-white/30"></div>
+            <img 
+              src={paradiseLogo} 
+              alt="Paradise Interior Logo" 
+              className="h-10 w-auto object-contain"
             />
           </div>
 

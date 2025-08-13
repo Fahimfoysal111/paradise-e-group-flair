@@ -1,4 +1,5 @@
-import egroupLogo from '@/assets/egroup-logo-updated.png';
+import egroupLogo from '@/assets/egroup-logo.png';
+import paradiseLogo from '@/assets/paradise-logo.png';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 export const Footer = () => {
@@ -8,9 +9,11 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-          <div className="flex items-center mb-6">
-            <img src={egroupLogo} alt="E-Group Logo" className="h-12 w-auto" />
-          </div>
+            <div className="flex items-center space-x-4 mb-6">
+              <img src={egroupLogo} alt="E-Group Logo" className="h-12 w-auto" />
+              <div className="w-px h-8 bg-muted-foreground/30"></div>
+              <img src={paradiseLogo} alt="Paradise Interior Logo" className="h-12 w-auto" />
+            </div>
             <h3 className="text-xl font-semibold mb-4">Paradise Interior & Exterior</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               A division of E-Group, specializing in transforming spaces with exceptional 
